@@ -1,0 +1,6 @@
+<div class="item-list">
+    <div class="item" *ngFor="let i of items">
+        <input type="checkbox" name="" [id]="'box'+i.id" checked putLabelVisible />
+        <label [for]="'box'+i.id">{{ i.label }}</label>
+    </div>
+</div>
